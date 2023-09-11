@@ -1,0 +1,172 @@
+
+/* Cabecera */
+
+#cabecera {
+    height: 50px;
+    background-image: url(../img/header.png);
+    line-height: 38px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+   
+  #cabecera ul {
+    width: 950px;
+    margin: 0 auto;
+    padding: 7px 0 0;
+    list-style-type: none;
+    overflow: hidden;
+  }
+/*
+  #cabecera ul li {
+    display: inline;
+    margin-right: 10px;
+    float: left;
+  }
+  */
+  #cabecera ul li a {
+    line-height: 24px;
+    font-size: 12px;
+    font-style: italic;
+    background: url(../img/header-right.png) right 0;
+    float: left;
+    color: #848484;
+  }
+
+  #cabecera ul li a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+  }
+  
+  #cabecera ul li a span {
+    display: block;
+    height: 26px;
+    float: left;
+    background: url(../img/header-left.png) no-repeat;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+
+  /* sobre mi*/
+
+#sobremi {
+    width: 950px;
+    padding: 80px 0 59px;
+    margin: 0 auto;
+    background: url(../img/line.png) repeat-x 0 bottom;
+    overflow: hidden;
+  }
+  
+  #sobremi h1 {
+    margin-bottom: 4px;
+    margin-top: 20px;
+  }
+  
+  #sobremi h2 {
+    font-size: 20px;
+    line-height: 20px;
+    font-style: italic;
+    margin-bottom: 70px;
+  }
+  
+  /* resumen y tamanio de foto */
+  
+  #resumen {
+    font-size: 20px;
+    line-height: 30px;
+    width: 390px;
+    float: left;
+    padding-right: 90px;
+  }
+  
+  #foto {
+    width: 250px;
+    height: 250px;
+    float: right;
+  }
+
+
+
+  /* Contacto */
+
+#contacto {
+    width: 250px;
+    float: left;
+    padding-right: 50px;
+    padding-top: 96px;
+    list-style-type: none;
+    line-height: 20px;
+  }
+  
+  #contacto li {
+    width: 250px;
+    overflow: hidden;
+    margin-bottom: 5px;
+  }
+  
+  #contacto li span {
+    float: left;
+  }
+  
+  #contacto li strong {
+    float: right;
+    text-align: right;
+    color: #3c3c3c;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* secciones */
+
+.seccion {
+    width: 950px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background: url(../img/line.png) repeat-x 0 bottom;
+    overflow: hidden;
+  }
+  
+  .seccion h2 {
+    width: 160px;
+    padding-right: 30px;
+    float: left;
+    padding-top: 0;
+    line-height: 22px;
+  }
+  
+  .seccion h3 {
+    line-height: 22px;
+    margin-bottom: 24px;
+    font-style: italic;
+  }
+  
+  .seccion h4 {
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: 20px;
+    margin-top: -20px;
+  }
+  
+  .seccion .fecha {
+    position: absolute;
+    top: 6px;
+    right: 0;
+  }
+  
+  .seccion .item {
+    width: 710px;
+    padding-left: 50px;
+    float: right;
+    padding-top: 0;
+    margin-bottom: 9px;
+    position: relative;
+    padding-bottom: 5px;
+    background: url(../img/separator.png) no-repeat 0 bottom;
+  }
+  
+  .seccion.descripcion {
+    width: 510px;
+  }
