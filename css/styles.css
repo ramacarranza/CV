@@ -1,37 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  color: #848484;
+}
+
+body.grid {
+  background-image: url(../images/grid.png);
+}
+
+h1 {
+  font-size: 2.1em;
+  line-height: 2.5em;
+  font-weight: normal;
+  font-style: normal;
+  color: #3c3c3c;
+}
+
+h2 {
+  font-size: 1.9em;
+  line-height: 1.5em;
+  font-weight: normal;
+  font-style: normal;
+  color: #848484;
+}
+
+h3 {
+  font-size: 1.9em;
+  line-height: 1.5em;
+  font-weight: normal;
+  font-style: normal;
+  color: #3c3c3c;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+a:link, a:visited {
+  color: #3c3c3c;
+  text-decoration: none;
+}
+
+a:link:hover, a:visited:hover {
+  text-decoration: underline;
+  color: #000;
+}
 
 /* Cabecera */
 
 #cabecera {
-    height: 50px;
+    height: 2.5em;
     background-image: url(../img/header.png);
-    line-height: 38px;
+    line-height: 1.9em;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1;
   }
-   
+  
   #cabecera ul {
-    width: 950px;
+    width: 47.5em;
     margin: 0 auto;
-    padding: 7px 0 0;
+    padding: .35em 0 0;
     list-style-type: none;
     overflow: hidden;
   }
-/*
-  #cabecera ul li {
+
+  #header ul li {
     display: inline;
-    margin-right: 10px;
-    float: left;
+    margin-right: .5em;
+    float: center;
   }
-  */
+
   #cabecera ul li a {
     line-height: 24px;
-    font-size: 12px;
+    font-size: .6em;
     font-style: italic;
     background: url(../img/header-right.png) right 0;
-    float: left;
+    float: center;
     color: #848484;
   }
 
@@ -42,76 +95,83 @@
   
   #cabecera ul li a span {
     display: block;
-    height: 26px;
-    float: left;
+    height: 1.3em;
+    float: center;
     background: url(../img/header-left.png) no-repeat;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: .5em;
+    padding-right: .5em;
   }
   
-
   /* sobre mi*/
 
-#sobremi {
-    width: 950px;
-    padding: 80px 0 59px;
+
+.sobremi {
+    display: flex;
+    justify-content: space-evenly;
+    width: 47.5em;
+    padding: 4em 0 3em;
     margin: 0 auto;
     background: url(../img/line.png) repeat-x 0 bottom;
     overflow: hidden;
+    /*background-color: white;*/
   }
   
-  #sobremi h1 {
-    margin-bottom: 4px;
-    margin-top: 20px;
+  /*
+  .sobremi > div {
+    background-color: white;
+  }
+*/
+  .sobremi h1 {
+    margin-bottom: .2em;
+    margin-top: 1em;
   }
   
-  #sobremi h2 {
-    font-size: 20px;
-    line-height: 20px;
+  .sobremi h2 {
+    font-size: 1em;
+    line-height: 1em;
     font-style: italic;
-    margin-bottom: 70px;
+    margin-bottom: 3.5em;
   }
   
   /* resumen y tamanio de foto */
   
-  #resumen {
-    font-size: 20px;
-    line-height: 30px;
-    width: 390px;
+  .resumen {
+    font-size: 1em;
+    line-height: 1.5em;
+    width: 19.5em;
     float: left;
-    padding-right: 90px;
+    padding-right: 4.5em;
   }
   
-  #foto {
-    width: 250px;
-    height: 250px;
+ #foto {
+    width: 12.5em;
+    height: 12.5em;
     float: right;
+    /*position: relative;*/
   }
-
-
 
   /* Contacto */
 
-#contacto {
-    width: 250px;
+.contacto {
+    width: 12.5em;
     float: left;
-    padding-right: 50px;
-    padding-top: 96px;
+    padding-right: 2.5em;
+    padding-top: 4.8em;
     list-style-type: none;
-    line-height: 20px;
+    line-height: 1em;
   }
   
-  #contacto li {
-    width: 250px;
+  .contacto li {
+    width: 12.5em;
     overflow: hidden;
-    margin-bottom: 5px;
+    margin-bottom: .25em;
   }
   
-  #contacto li span {
+  .contacto li span {
     float: left;
   }
   
-  #contacto li strong {
+  .contacto li strong {
     float: right;
     text-align: right;
     color: #3c3c3c;
@@ -122,51 +182,98 @@
   /* secciones */
 
 .seccion {
-    width: 950px;
+    width: 47.5em;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 1em 0;
     background: url(../img/line.png) repeat-x 0 bottom;
     overflow: hidden;
   }
   
   .seccion h2 {
-    width: 160px;
-    padding-right: 30px;
+    width: 8em;
+    padding-right: 1.5em;
     float: left;
     padding-top: 0;
-    line-height: 22px;
+    line-height: 1.1em;
   }
   
   .seccion h3 {
-    line-height: 22px;
-    margin-bottom: 24px;
+    line-height: 1.1em;
+    margin-bottom: 1.2em;
     font-style: italic;
   }
   
   .seccion h4 {
     font-weight: normal;
     font-style: normal;
-    margin-bottom: 20px;
-    margin-top: -20px;
+    margin-bottom: 1em;
+    margin-top: -1em;
   }
   
   .seccion .fecha {
     position: absolute;
-    top: 6px;
+    top: 0.3em;
     right: 0;
   }
   
   .seccion .item {
-    width: 710px;
-    padding-left: 50px;
+    width: 35.5em;
+    padding-left: 2.5em;
     float: right;
     padding-top: 0;
-    margin-bottom: 9px;
+    margin-bottom: .45em;
     position: relative;
-    padding-bottom: 5px;
+    padding-bottom: .25em;
     background: url(../img/separator.png) no-repeat 0 bottom;
   }
-  
+
   .seccion.descripcion {
-    width: 510px;
+    width: 25.5em;
   }
+
+  #footer {
+    text-align: center;
+    padding-top: .5em;
+    padding-bottom: .5em;
+  }
+
+/* @media*/
+@media(max-width:600px)
+{
+  body {
+    font-size: 13px;
+  }
+
+.sobremi {
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+#cabecera {
+  height: 3.84em;
+  line-height: 2.9em;
+}
+
+#cabecera ul {
+  width: 73em;
+  padding: .53em 0 0;
+}
+
+#header ul li {
+  margin-right: .5em;
+}
+
+#cabecera ul li a {
+  line-height: 24px;
+  font-size: .9em;
+}
+
+
+#cabecera ul li a span {
+  height: 2em;
+  padding-left: .76em;
+  padding-right: .76em;
+}
+
+
+}
